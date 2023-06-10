@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica&display=swap');@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap');
+
+:root {
+    --primary-color:#023047;
+    --secondary-color:#8ECAE6;
+    --accent1-color:#091ba7;
+    --accent2-color:#fbea00;
+
+    --heading-font:'Geologica';
+
+    --nav-background-color: #8ECAE6;
+    --nav-link-color: #023047;
+    --nav-hover-link-color: #fbea00;
+    --nav-hover-background-color: #ffffff;
+}
+
+body {
+    font-family: var(--heading-font);
+    max-width: 900px;
+    justify-content: center;
+}
+
+main {
+    max-width: 900px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.card {
+    display: grid;
+}
+
+.card ul {
+    list-style-type: none;
+}
+
+header {
+    display: flex;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    align-content: center;
+    justify-content: center;
+}
+
+nav {
+    background: var(--accent1-color);
+    margin: 0 auto;
+    
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+    color: #ffffff;
+    justify-content: space-around;
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+

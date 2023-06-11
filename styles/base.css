@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Geologica&display=swap');@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica&family=Pacifico&display=swap');
 
 :root {
     --primary-color:#023047;
@@ -6,18 +6,26 @@
     --accent1-color:#091ba7;
     --accent2-color:#fbea00;
 
-    --heading-font:'Geologica';
+    --heading-font:'Pacifico';
+    --paragraph-font:'Geologica';
 
     --nav-background-color: #8ECAE6;
     --nav-link-color: #023047;
     --nav-hover-link-color: #fbea00;
     --nav-hover-background-color: #ffffff;
+
+    --indigo-dye: #08415cff;
+    --persian-red: #cc2936ff;
+    --tea-rose-red: #ebbab9ff;
+    --blue-munsell: #388697ff;
+    --aquamarine: #b5ffe1ff;    
 }
 
 body {
     font-family: var(--heading-font);
     max-width: 900px;
     justify-content: center;
+    background-color: #08415cff;
 }
 
 main {
@@ -58,6 +66,20 @@ nav a{
 
 nav ul {
 	list-style-type: none;
+}
+
+h1 {
+    background:#cc2936ff;
+    font-family: var(--heading-font);
+}
+
+p, ul {
+    font-family: var(--paragraph-font);
+    color:#ffffff;
+}
+
+img {
+    max-width: 800px;;
 }
 
 

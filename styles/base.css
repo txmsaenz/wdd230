@@ -68,7 +68,7 @@ nav ul {
 	list-style-type: none;
 }
 
-h1 {
+h1, h2, h3{
     background:#cc2936ff;
     font-family: var(--heading-font);
 }

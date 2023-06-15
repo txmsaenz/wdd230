@@ -3,8 +3,8 @@
 :root {
     --primary-color:#073b4cff;
     --secondary-color:#06d6a0ff;
-    --accent1-color:#ef476fff;
-    --accent2-color:#ffd166ff;
+    --accent1-color:#EF476F;
+    --accent2-color:#FFD166;
     --accent3-color: #3BA7CB;
 
     --heading-font:'Pacifico';
@@ -98,7 +98,7 @@ nav ul {
 
 
 h1, h2, h3{
-    background: var(--accent2-color);
+    background: #FFD166;
     font-family: var(--heading-font);
 }
 

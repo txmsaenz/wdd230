@@ -82,4 +82,7 @@ img {
     max-width: 800px;;
 }
 
+a:link, a:visited {
+    color: white;
+}
 

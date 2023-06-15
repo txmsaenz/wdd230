@@ -1,31 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Geologica&family=Pacifico&display=swap');
 
 :root {
-    --primary-color:#023047;
-    --secondary-color:#8ECAE6;
-    --accent1-color:#091ba7;
-    --accent2-color:#fbea00;
+    --primary-color:#073b4cff;
+    --secondary-color:#06d6a0ff;
+    --accent1-color:#ef476fff;
+    --accent2-color:#ffd166ff;
+    --accent3-color: #3BA7CB;
 
     --heading-font:'Pacifico';
     --paragraph-font:'Geologica';
 
-    --nav-background-color: #8ECAE6;
-    --nav-link-color: #023047;
-    --nav-hover-link-color: #fbea00;
-    --nav-hover-background-color: #ffffff;
+    --nav-background-color: #3BA7CB;
+    --nav-link-color: #073b4cff;
+    --nav-hover-link-color: #ffd166ff;
+    --nav-hover-background-color: #ffffff;  
 
-    --indigo-dye: #08415cff;
-    --persian-red: #cc2936ff;
-    --tea-rose-red: #ebbab9ff;
-    --blue-munsell: #388697ff;
-    --aquamarine: #b5ffe1ff;    
 }
 
 body {
     font-family: var(--heading-font);
     max-width: 900px;
     justify-content: center;
-    background-color: #08415cff;
+    background-color: var(--primary-color);
 }
 
 main {
@@ -45,13 +41,13 @@ main {
 header {
     display: flex;
     padding: 2rem;
-    background-color: var(--secondary-color);
+    background-color: var(--accent1-color);
     align-content: center;
     justify-content: center;
 }
 
 nav {
-    background: var(--accent1-color);
+    background: var(--accent3-color);
     margin: 0 auto;
     
 }
@@ -60,7 +56,6 @@ nav a{
     display: block;
     text-decoration: none;
     padding: 1rem;
-    color: #ffffff;
     justify-content: space-around;
 }
 
@@ -68,8 +63,42 @@ nav ul {
 	list-style-type: none;
 }
 
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: #eee;
+	color: #000;
+ 	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li {
+	display: block;
+	width: 100%;
+}
+.open li a {
+	display: block;
+}
+
+
+.active {
+	background-color: gray;
+}
+
+
 h1, h2, h3{
-    background:#ebbab9ff;
+    background: var(--accent2-color);
     font-family: var(--heading-font);
 }
 
@@ -86,3 +115,14 @@ a:link, a:visited {
     color: white;
 }
 
+nav a:link, nav a:visited{
+    color: black;
+}
+
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+}

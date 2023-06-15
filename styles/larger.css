@@ -22,4 +22,13 @@
     p {
         grid-row: 2/2;
     }
+
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+		flex-direction: row;
+	}
+
 }

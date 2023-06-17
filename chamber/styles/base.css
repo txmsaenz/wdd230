@@ -94,10 +94,6 @@ p, ul {
     color:#ffffff;
 }
 
-img {
-    max-width: 800px;;
-}
-
 a:link, a:visited {
     color: white;
 }
@@ -117,6 +113,7 @@ nav a:link, nav a:visited{
 .card a {
     justify-content: center;
     text-decoration: none;
+    display: flex;
 }
 
 .card h1 {

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica&family=Pacifico&display=swap');
+
+:root {
+    --primary-color:#073b4cff;
+    --secondary-color:#06d6a0ff;
+    --accent1-color:#EF476F;
+    --accent2-color:#FFD166;
+    --accent3-color: #3BA7CB;
+
+    --heading-font:'Pacifico';
+    --paragraph-font:'Geologica';
+
+    --nav-background-color: #3BA7CB;
+    --nav-link-color: #073b4cff;
+    --nav-hover-link-color: #ffd166ff;
+    --nav-hover-background-color: #ffffff;  
+
+}
+
+body {
+    font-family: var(--heading-font);
+    max-width: 900px;
+    background-color: var(--primary-color);
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    padding: 2rem;
+    background-color: var(--accent1-color);
+    align-content: center;
+    justify-content: center;
+}
+
+nav {
+    background: var(--accent3-color);
+    margin: 0 auto; 
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+    justify-content: space-around;
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: #eee;
+	color: #000;
+ 	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li {
+	display: block;
+	width: 100%;
+}
+.open li a {
+	display: block;
+}
+
+.active {
+	background-color: gray;
+}
+
+h1, h2 {
+    background: #FFD166;
+    font-family: var(--heading-font);
+}
+
+p, ul {
+    font-family: var(--paragraph-font);
+    color:#ffffff;
+}
+
+img {
+    max-width: 800px;;
+}
+
+a:link, a:visited {
+    color: white;
+}
+
+nav a:link, nav a:visited{
+    color: black;
+}
+
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+}
+
+.card a {
+    justify-content: center;
+    text-decoration: none;
+}
+
+.card h1 {
+    justify-content: center;
+}
+
+footer {
+    justify-content: center;
+}

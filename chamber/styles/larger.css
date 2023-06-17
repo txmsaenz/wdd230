@@ -1,0 +1,34 @@
+@media (min-width: 500px) {    
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    nav ul {
+        display: flex;
+    }
+    
+    nav ul li {
+        flex: 1 1 100%
+    }
+
+    .card {
+        grid-template-columns: auto auto;
+    }
+
+    h2 {
+        grid-row: 1/2;
+    }
+
+    p {
+        grid-row: 2/2;
+    }
+
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+		flex-direction: row;
+	}
+
+}

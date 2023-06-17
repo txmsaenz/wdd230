@@ -91,11 +91,9 @@ nav ul {
 	display: block;
 }
 
-
 .active {
 	background-color: gray;
 }
-
 
 h1, h2, h3{
     background: #FFD166;

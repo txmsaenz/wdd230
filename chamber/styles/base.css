@@ -25,7 +25,27 @@ body {
 
 main {
     max-width: 900px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto;
     margin: 0 auto;
+    width: 400px;
+}
+
+sidebar {
+    grid-column: 1 / 2;
+}
+
+grid {
+    grid-column: 2 /3;
+    justify-content: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    background: black;
+    animation: fade 15s;
 }
 
 header {

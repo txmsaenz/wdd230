@@ -2,16 +2,19 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box; 
     box-sizing: border-box;
+    --small: 1rem;
+    --large: 20rem;
+    --border:1px solid #445ba9;
 }
 
 main {
     padding: 0 2%;
-    min-height: 20rem;
+    min-height: var(--large);
 }
 
 form fieldset {
     margin: 2rem 0;
-    border: 1px solid #445ba9;
+    border: var(--border);
     border-radius: 10px;
     padding: .5rem 2%; 
 }
@@ -23,17 +26,17 @@ form legend {
 
 form label.top {
     display: block;
-    padding-top: 1rem;
-    font-size: 1rem;
+    padding-top: var(--small);
+    font-size: var(--small);
     width: 100%;
-    max-width: 20rem;
+    max-width: var(--large);
 }
 
 form input.submitBtn {
     border: none;
     background-color: #1e0e9b;
     color: white;
-    border-radius: 1rem;
+    border-radius: var(--small);
     padding: .75rem 1.5rem;
     margin: 0 0 2rem 2%;
     width: 96%;

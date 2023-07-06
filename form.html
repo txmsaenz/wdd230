@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miranda Saenz | WDD 230 | Form</title>
+    <link href="styles/form.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Submission Form</h1>
+    </header>
+
+    <main>
+        <h1>Page Rating</h1>
+            <form method="get" action="record.html">
+                <fieldset>
+                    <legend>Student Information</legend>
+                    <label class="top">Username*<input type="text" id="username" name="username" required></label>
+                    <label class="top">Password*<input type="password" id="password" name="password" required pattern="[A-Za-Z0-9]{8,}" title="At least 8 alpha-numeric characters"></label>
+                    <label class="top">Password*<input type="password" id="password2" name="password2" required pattern="[A-Za-Z0-9]{8,}" title="At least 8 alpha-numeric characters"></label>
+                    <label class="top">Email*<input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"></label>
+                    <label class="top">Page Rating<input type="range" id="rating" name="rating" min="1" max="10" value="1" step="1" list="rangevalues"></label>
+                        <datalist id="rangevalues">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </datalist>
+                </fieldset>
+                <input type="submit" value="Record My Rating" class="submitBtn">
+            </form>
+
+    </main>
+</body>
+</html>

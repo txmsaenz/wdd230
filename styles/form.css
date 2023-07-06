@@ -28,8 +28,39 @@ form label.top {
     display: block;
     padding-top: var(--small);
     font-size: var(--small);
-    width: 100%;
     max-width: var(--large);
+}
+
+#formmessage {
+	visibility: none;
+	margin: 10px;
+	padding: 0.5rem;
+	color: red;
+}
+
+#password:invalid {
+	background-color: #fff0f3;
+	animation: shaketext 500ms;
+}
+
+#rating {
+	width: 180px;
+	margin-bottom: 0;
+}
+
+#rangevalue {
+	font-size: 2rem;
+	color: navy;
+}
+
+#rangevalues {
+	display: flex;
+
+	width: 200px;
+}
+
+#rangevalues option {
+	flex: 1 1 auto;
 }
 
 form input.submitBtn {

@@ -19,10 +19,13 @@
                 <fieldset>
                     <legend>Student Information</legend>
                     <label class="top">Username*<input type="text" id="username" name="username" required></label>
-                    <label class="top">Password*<input type="password" id="password" name="password" required pattern="[A-Za-Z0-9]{8,}" title="At least 8 alpha-numeric characters"></label>
-                    <label class="top">Password*<input type="password" id="password2" name="password2" required pattern="[A-Za-Z0-9]{8,}" title="At least 8 alpha-numeric characters"></label>
+                    <label class="top">Password*<input type="password" id="password" name="password" required pattern="[a-zA-Z0-9]{8,}" placeholder="At least 8 alpha-numeric characters"></label>
+                    <label class="top">Password*<input type="password" id="password2" name="password2" required></label>
+                    <div id="formmessage"></div>
                     <label class="top">Email*<input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"></label>
-                    <label class="top">Page Rating<input type="range" id="rating" name="rating" min="1" max="10" value="1" step="1" list="rangevalues"></label>
+                    <label class="top">Page Rating</label>
+                    <div id="rangevalue">1</div>
+                    <input type="range" id="rating" name="rating" min="1" max="10" value="1" step="1" list="rangevalues">
                         <datalist id="rangevalues">
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -40,5 +43,6 @@
             </form>
 
     </main>
+    <script src="scripts/form.js"></script>
 </body>
 </html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miranda Saenz - WDD 230 - Web Frontend Development - Guam Chamber of Commerce</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development | Miranda Saenz | Guam Chamber of Commerce">
+    <meta name="author" content="Miranda Saenz">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="/favicon.ico">
+    <meta property="og:title" content="Miranda Saenz - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://txmsaenz.github.io/wdd230/chamber/index.html">
+    <meta property="og:image" content="https://www.stripes.com/incoming/nng15p-161222guam-tourismphoto01.jpg/alternates/LANDSCAPE_910/161222GUAM-TOURISMphoto01.jpg">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Guam Chamber of Commerce</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="https://txmsaenz.github.io/wdd230/chamber.discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form method="get" action="thankyou.html">
+        <fieldset>    
+            <legend>Join the Chamber of Commerce</legend>
+            <div>
+            <label class="top">First Name*<input type="text" name="fname" id="fname" required></label>
+            <label class="top">Last Name*<input type="text" name="lname" id="lname" required></label>
+            <label class="top">Title or Position<input type="text" name="title" id="title" pattern="^[a-zA-Z][\sa-zA-Z- ]${7,}"></label>
+            <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            <label class="top">Mobile Phone Number*<input type="tel" name="phone" id="phone" required></label>
+            <label class="top">Business or Organization Name*<input type="text" name="bname" id="bname" required></label>
+        </div>    
+        
+            <label>Membership Level</label>
+                <label class="sbs"><input type="radio" name="membership" value="np">NP Membership</label>
+                <label class="sbs"><input type="radio" name="membership" value="bronze">Bronze Membership</label>
+                <label class="sbs"><input type="radio" name="membership" value="silver">Silver Membership</label>
+                <label class="sbs"><input type="radio" name="membership" value="gold">Gold Membership</label>
+
+                <label class="top">Business or Organization Description<input type="text" name="description" id="description"></label>    
+        </fieldset>
+        <input type="submit" value="Join the Chamber" class="submitBtn">
+        </form>    
+    </main>
+    <footer>
+        <p>&copy; <span id="currentdate"></span> | Miranda Saenz | Washington</p>
+        <p>txmsaenz@gmail.com | WDD230 | Chamber of Commerce Assignment</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/chamber.js"></script>
+</body>
+</html>

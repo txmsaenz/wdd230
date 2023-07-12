@@ -1,0 +1,62 @@
+
+{
+    "members": [
+      {
+        "name": "MDA Guam",
+        "address": "856 North Marine Corps Drive, Piti, Guam 96915",
+        "phone" :"671-472-6321",
+        "url": "https://mdaguam.com",
+        "image": "",
+        "level": "Gold"
+      },
+      {
+        "name": "Sumay Grill",
+        "address": "518 S Marine Corps Drive, Santa Rita, Guam 96915",
+        "phone" :"671-565-2377",
+        "url": "https://www.facebook.com/profile.php?id=125826820826534",
+        "image": "",
+        "level": ""
+      },
+      {
+        "name": "Kmart",
+        "address": "404 N Marine Drive, Tamuning, Guam 96911",
+        "phone" :"671-649-9878",
+        "url": "https://www.facebook.com/KmartGuam7705/",
+        "image": "",
+        "level": ""
+      },
+      {
+        "name": "Vons",
+        "address": "302 South Route 4, Hagatna, Guam",
+        "phone" :"671-477-3300",
+        "url": "https://www.facebook.com/vonschicken/",
+        "image": "",
+        "level": ""
+      },
+      {
+        "name": "Froots",
+        "address": "Anderson Air Force Base Exchange Food Court, Yigo, Guam 96929",
+        "phone" :"671-477-1194",
+        "url": "https://www.facebook.com/FROOTSGUAM/",
+        "image": "",
+        "level": ""
+      },
+      {
+        "name": "King's Restaurant",
+        "address": "199 Chalan San Antonio, Tamuning, Guam 96911",
+        "phone" :"671-647-5464",
+        "url": "https://www.facebook.com/kingsrestaurantguam/",
+        "image": "",
+        "level": ""
+      },
+      {
+        "name": "Fish Eye Marine Park",
+        "address": "818 N Marine Corps Drive, Piti, GUam 96915",
+        "phone" :"671-475-7777",
+        "url": "https://fisheyeguamtours.com/",
+        "image": "",
+        "level": ""
+      }
+    ]
+}
+    

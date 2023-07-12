@@ -168,3 +168,15 @@ form input.submitBtn {
     width: 96%;
     max-width: 20rem;
 }
+
+.listItems {
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 5px;
+	align-items: center;
+}
+
+.listItems img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+}

@@ -21,7 +21,7 @@ async function getLinks() {
 
         title.innerText = week.title;
         url.innerText = week.url;
-        url.href = linksURL + week.url;
+        url.href = baseURL + week.url;
 
         listItem.appendChild(title);
         listItem.appendChild(url);

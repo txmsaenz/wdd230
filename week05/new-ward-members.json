@@ -1,0 +1,28 @@
+{
+    "familyName" : "Saenz",
+    "dateIntoWard" : 2022,
+    "numOfRecords" : 4,
+    "bishopricVisit" : false,
+    "familyMembers" : [
+      {
+        "name" : "Miranda",
+        "gender" : "female",
+        "birthdate" : "18 Feb 1982"
+      },
+      {
+        "name" : "Arnoldo",
+        "gender" : "male",
+        "birthdate" : "07 May 1979"
+      },
+      {
+        "name" : "Matthew",
+        "gender" : "male",
+        "birthdate" : "21 April 2006"
+      },
+      {
+        "name" : "Andrew",
+        "gender" : "male",
+        "birthdate" : "05 May 2008"
+      }
+    ]
+  }

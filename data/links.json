@@ -1,0 +1,95 @@
+
+{
+  "weeks": [
+    {
+      "week": "Week 2",
+      "links": [
+        {
+          "url":"week02/design.html",
+          "title":"Design Principles"
+        },
+        {
+          "url":"https://codepen.io/txmsaenz/pen/mdQVOZz",
+          "title":"Hamburger Code Pen"
+        },
+        {
+            "url":"week02/bom.html",
+            "title":"DOM Manipulation"
+        }
+      ]
+    },
+    {
+        "week": "Week 3",
+        "links": [
+          {
+            "url":"week03/images/landscape.webp",
+            "title":"WebP"
+          },
+          {
+            "url":"week03/lazyload.html",
+            "title":"Lazy Load Examples"
+          },
+          {
+            "url":"week03/responsive-images.html",
+            "title":"Responsive Images Example"
+          }
+        ]
+      },
+      {
+        "week": "Week 4",
+        "links": [
+          {
+            "url":"https://codepen.io/txmsaenz/pen/WNYEKjv",
+            "title":"Prepare Psuedo Classes"
+          },
+          {
+            "url":"images/screenshot.html",
+            "title":"CSS Combinators Completion Image"
+          },
+          {
+            "url":"week04/tablebuild.html",
+            "title":"Table Example"
+          },
+          {
+            "url":"week04/form-start/index.html",
+            "title":"Forms Example"
+          }
+        ]
+      },
+      {
+        "week": "Week 5",
+        "links": [
+          {
+            "url":"https://codepen.io/txmsaenz/pen/yLQzVgw",
+            "title":"CSS Psuedo-elements Code Pen"
+          },
+          {
+            "url":"week05/new-ward-members.json",
+            "title":"JSON"
+          },
+          {
+            "url":"week05/prophets.html",
+            "title":"Fetch API"
+          },
+          {
+            "url":"week05/weather.html",
+            "title":"Weather API"
+          }
+        ]
+      },
+      {
+        "week": "Week 6",
+        "links": [
+          {
+            "url":"week01/holygrail.html",
+            "title":"HG Layout"
+          },
+          {
+            "url":"week01/media-query.html",
+            "title":"mQueries"
+          }
+        ]
+      }
+    ]
+}
+  

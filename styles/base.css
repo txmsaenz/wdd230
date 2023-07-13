@@ -123,7 +123,7 @@ h1, h2, h3{
 
 p, ul {
     font-family: var(--paragraph-font);
-    color:#ffffff;
+    color:black;
 }
 
 img {
@@ -139,9 +139,8 @@ nav a:link, nav a:visited{
 }
 
 #mode {
-	position: absolute;
-	top: 1rem;
-	right: 1rem;
-	font-size: 3rem;
-	cursor: pointer;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
 }

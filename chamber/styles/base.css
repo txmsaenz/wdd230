@@ -20,7 +20,7 @@
 body {
     font-family: var(--heading-font);
     max-width: 900px;
-    background-color: var(--primary-color);
+    background-color: var(--accent3-color);
 }
 
 main {
@@ -57,7 +57,7 @@ header {
 }
 
 nav {
-    background: var(--accent3-color);
+    background: var(--accent1-color);
     margin: 0 auto; 
 }
 
@@ -76,7 +76,7 @@ nav ul {
 	font-size: 1.5rem;
 	border: 1px solid rgba(0,0,0,.3);
 	padding: 3px 7px 6px;
-	background-color: #eee;
+	background-color: black;
 	color: #000;
  	position: absolute;
 	top: 5px;
@@ -111,11 +111,11 @@ h1, h2 {
 
 p, ul {
     font-family: var(--paragraph-font);
-    color:#ffffff;
+    color:black;
 }
 
 a:link, a:visited {
-    color: white;
+    color:black;
 }
 
 nav a:link, nav a:visited{
@@ -179,4 +179,9 @@ form input.submitBtn {
 .listItems img {
 	border: 1px solid #fff;
 	box-shadow: 0 0 10px #333;
+}
+
+figure img {
+    max-height: 50px;
+    max-width: 50px;
 }

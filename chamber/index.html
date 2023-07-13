@@ -22,10 +22,10 @@
     </header>
     <nav>
         <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="https://txmsaenz.github.io/wdd230/chamber.discover.html">Discover</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
+            <li><a href="https://txmsaenz.github.io/wdd230/index.html">Home</a></li>
+            <li><a href="https://txmsaenz.github.io/wdd230/chamber/discover.html">Discover</a></li>
+            <li><a href="https://txmsaenz.github.io/wdd230/chamber/directory.html">Directory</a></li>
+            <li><a href="https://txmsaenz.github.io/wdd230/chamber/join.html">Join</a></li>
         </ul>
     </nav>
     <main>
@@ -37,10 +37,16 @@
             <h2>Current Events</h2>
             <p>filler</p>
         </section>
+
         <section class="card">
-            <h2>Weather Card</h2>
-            <p>filler</p>
+            <h2>Weather</h2>
+            <figure>
+                <img id="weather-icon" src="iconsrc" alt="desc">
+                <span id="current-temp"></span>
+                <figcaption></figcaption>
+            </figure>
         </section>
+
         <section class="card">
             <h2>Company Spotlight</h2>
             <p>filler</p>
@@ -51,6 +57,7 @@
         <p>txmsaenz@gmail.com | WDD230 | Chamber of Commerce Assignment</p>
         <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
+    <script src="/scripts/weather.js"></script>
     <script src="scripts/chamber.js"></script>
 </body>
 </html>

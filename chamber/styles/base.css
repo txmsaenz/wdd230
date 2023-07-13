@@ -36,7 +36,7 @@ sidebar {
     grid-column: 1 / 2;
 }
 
-grid {
+grid2 {
     grid-column: 2 /3;
     justify-content: center;
 }
@@ -46,6 +46,15 @@ img {
     height: auto;
     background: black;
     animation: fade 15s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 header {

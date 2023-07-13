@@ -1,20 +1,17 @@
 const baseURL = "https://txmsaenz.github.io/wdd230/";
-
 const linksURL = "https://txmsaenz.github.io/wdd230/chamber/data/members.json";
+const list = document.querySelector('#listItems');
 
 async function getLinks() {
     const response = await fetch(linksURL);
     const data = await response.json();
-    //console.log(data);
-    displayLinks(data);
+    displayLinks(data.members);
   }
   
   getLinks();
 
-  const displayLinks = (data) => {
-    const list = document.getElementById('listItems');
-
-    data.forEach((member) => {
+  const displayLinks = (members) => {
+    members.forEach((member) => {
         let listItem = document.createElement('li');
         let name = document.createElement('p');
         let address = document.createElement('p');
@@ -45,3 +42,19 @@ async function getLinks() {
         list.appendChild(listItem);
     });
   };
+
+  const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("article");
+
+gridbutton.addEventListener("click", () => {
+	display.classList.add("grid");
+	display.classList.remove("list");
+});
+
+listbutton.addEventListener("click", showList);
+
+function showList() {
+	display.classList.add("list");
+	display.classList.remove("grid");
+}

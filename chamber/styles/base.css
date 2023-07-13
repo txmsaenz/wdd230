@@ -219,6 +219,9 @@ section {
 .grid img {
 	border: 1px solid #fff;
 	box-shadow: 0 0 10px #333;
+    height: 25%;
+    max-width: 25%;
+    
 }
 
 .grid section > * {
@@ -274,7 +277,4 @@ section a {
 	letter-spacing: 1.1pt;
 }
 
-img {
-	height: 75px;
-	max-width: 25%; 
-}
+

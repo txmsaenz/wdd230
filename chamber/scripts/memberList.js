@@ -16,14 +16,14 @@ async function getLinks() {
         let name = document.createElement('p');
         let address = document.createElement('p');
         let phone = document.createElement('p');
-        let url = document.createElement('a');
+        let url = document.createElement('p');
         let image = document.createElement('img');
         let level = document.createElement('p');
 
         name.innerText = member.name;
         address.innerText = member.address;
         phone.innerText = member.phone;
-        url.href = baseURL + member.url;
+        url.innerText = member.url;
         level.innerText = member.level;
 
         image.setAttribute('src', member.image);

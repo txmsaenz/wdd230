@@ -155,7 +155,7 @@ footer {
 
 form {
     font-family: var(--paragraph-font);
-    color:#ffd166ff;
+    color:black;
 }
 
 form label.top, form input {

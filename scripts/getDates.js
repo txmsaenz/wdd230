@@ -5,6 +5,20 @@ document.getElementById('currentdate').textContent = new Date().toLocaleDateStri
 
 document.getElementById('lastModified').textContent = document.lastModified;
 
+const visitsDisplay = document.querySelector(".visits");
+
+let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+
+if (numVisits !== 0) {
+	visitsDisplay.textContent = numVisits;
+} else {
+	visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
+}
+
+numVisits++;
+
+localStorage.setItem("numVisits-ls", numVisits);
+
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
@@ -27,3 +41,4 @@ modeButton.addEventListener("click", () => {
 		modeButton.textContent = "☑️";
 	}
 });
+

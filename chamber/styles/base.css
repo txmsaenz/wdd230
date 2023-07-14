@@ -48,6 +48,11 @@ img {
     animation: fade 15s;
 }
 
+picture img {
+    width: 960px;
+    animation: none;
+}
+
 @keyframes fade {
     0% {
         opacity: 0;
@@ -286,4 +291,9 @@ section a {
 	letter-spacing: 1.1pt;
 }
 
-
+.banner {
+    background-color: var(--accent2-color);
+    color: #000;
+    padding: 10px;
+    text-align: center;
+}

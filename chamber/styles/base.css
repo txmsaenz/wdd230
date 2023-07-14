@@ -231,7 +231,7 @@ section {
 	text-align: center;
 }
 
-.grid img {
+.grid img, .card2 img {
 	border: 1px solid #fff;
 	box-shadow: 0 0 10px #333;
     height: 25%;
@@ -298,3 +298,25 @@ section a {
     padding: 10px;
     text-align: center;
 }
+
+.bannerContent {
+    padding: 15px;
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.bannerText {
+    flex-grow: 1;
+    line-height: 1.5;
+}
+
+.bannerClose {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+

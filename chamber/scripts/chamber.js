@@ -23,7 +23,6 @@ if (lastVisit === 0) {
     visitsDisplay.textContent = 'You last visited  ${lastVisit} days ago.';
   }
 
-
 lastVisit++;
 
 localStorage.setItem("lastVisit-ls", lastVisit);

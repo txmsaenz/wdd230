@@ -1,14 +1,15 @@
 function showBanner() {
-    var currentDate = new Date();
-    var currentDay = currentDate.getDay(); 
+    let currentDate = new Date();
+    let currentDay = currentDate.getDay(); 
 
-    if (currentDay >= 1 && currentDay <= 7) {
-        let banner = document.createElement("div");
-        banner.className = "banner";
-        banner.innerText = "Join us at the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.";
-
-        banner.appendChild(banner);
+    document.querySelector(".bannerClose").addEventListener('click', () => {
+        document.querySelector('.banner').style.display="none";
+    });
+    
+    if (currentDay == 0 || currentDay >= 4 && currentDay <= 7) {
+        document.querySelector('.banner').style.display="none";
+        };
     }
-}
+
 
 showBanner();

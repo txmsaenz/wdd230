@@ -67,16 +67,7 @@ header {
 
 nav {
     background: var(--accent2-color);
-    margin: 0 auto;
-    
-}
-
-nav a{
-    display: block;
-    text-decoration: none;
-    padding: 1rem;
-    justify-content: space-around;
-    
+    margin: 1rem auto;
 }
 
 nav ul {
@@ -86,12 +77,30 @@ nav ul {
 #menu {
 	font-size: 1.5rem;
 	border: 1px solid rgba(0,0,0,.3);
-	padding: 3px 7px 6px;
+	padding: .25rem .75rem;
 	background-color: #eee;
 	color: #000;
  	position: absolute;
-	top: 5px;
-	right: 5px;
+	top: 1rem;
+	right: 1rem;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+}
+.navigation li {
+	display: none;
+}
+.navigation li a {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+}
+.navigation li a:hover {
+	font-weight: 700;
 }
 
 #menu::before {
@@ -109,10 +118,6 @@ nav ul {
 }
 .open li a {
 	display: block;
-}
-
-.active {
-	background-color: gray;
 }
 
 h1, h2, h3{

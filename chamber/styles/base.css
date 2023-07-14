@@ -321,3 +321,15 @@ nav ul {
     display: block;
 }
 
+.menu2 {
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: var(--accent1-color);
+    text-align: center;
+}
+
+.menu2 button {
+    padding: 1rem;
+    font-weight: 700;
+}

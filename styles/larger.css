@@ -28,11 +28,12 @@
 	}
 
 	.navigation {
-		flex-direction: row;
+		display: flex;
+        flex-direction: row;
 	}
 
     .navigation li {
-		display: block;
+	
 		flex: 1 1 100%;
 	}
 

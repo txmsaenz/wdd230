@@ -45,6 +45,11 @@ img {
     animation: fade 15s;
 }
 
+.hero {
+    margin: 10px auto;
+    position: relative;
+}
+
 .hero img{
     width: 960px;
     animation: none;
@@ -65,50 +70,6 @@ header {
     background-color: var(--accent1-color);
     align-content: center;
     justify-content: center;
-}
-
-nav {
-    background: var(--accent1-color);
-    margin: 0 auto; 
-}
-
-nav a{
-    display: block;
-    text-decoration: none;
-    padding: 1rem;
-    justify-content: space-around;
-}
-
-nav ul {
-	list-style-type: none;
-}
-
-#menu {
-	font-size: 1.5rem;
-	border: 1px solid rgba(0,0,0,.3);
-	padding: 3px 7px 6px;
-	background-color: black;
-	color: #000;
- 	position: absolute;
-	top: 5px;
-	right: 5px;
-}
-
-#menu::before {
-	content: "☰";
-}
-
-#menu.open::before {
-	content: "X";
-}
-
-/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
-.open li {
-	display: block;
-	width: 100%;
-}
-.open li a {
-	display: block;
 }
 
 .active {
@@ -199,19 +160,6 @@ form input.submitBtn {
 figure img {
     max-height: 50px;
     max-width: 50px;
-}
-
-.menu {
-	margin: 1rem auto;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	padding: 0.5rem;
-	background-color: var(--accent1-color);
-	text-align: center;
-}
-
-.menu button {
-	padding: 1rem;
-	font-weight: 700;
 }
 
 section {
@@ -318,5 +266,58 @@ section a {
     cursor: pointer;
 }
 
+/*hamButton*/
+nav {
+    background: var(--accent1-color);
+    margin: 0 auto; 
+}
 
+nav ul {
+	list-style-type: none;
+}
+
+#menu {
+    display: block;
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	color: #000;
+ 	position: absolute;
+	top: 5px;
+	right: 5px;
+    text-decoration: none;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+}
+
+.navigation li {
+	display: none;
+}
+
+.navigation a {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+}
+
+.navigation li a:hover {
+	font-weight: 700;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+.show li {
+    display: block;
+}
 

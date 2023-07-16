@@ -10,19 +10,17 @@ const todaysDate = Date.now();
 
 currentdate.textContent = new Date().toLocaleDateString('en-US', options);
 
-const lastVisited = document.getElementById('lastModified');
-lastVisited.textContent = document.lastModified;
+const lastVisit = new Date(window.localStorage.getItem('lastVisit-ls'));
+const today = new Date();
 
-let lastVisit = parseInt(window.localStorage.getItem('lastVisit-ls'))  || 0;
-
-if (lastVisit === 0) {
+if (!lastVisit) {
 	visitsDisplay.textContent = `Welcome! Let us know if you have any questions.`;
-} else if (lastVisit < 1) {
-	visitsDisplay.textContent = `Back so soon!  Awesome!`;
+} else {
+  const lastVisited = Math.floor((today - lastVisit) / (1000 * 60 * 60 * 24));
+    if (lastVisited === 0){
+  visitsDisplay.textContent = `Back so soon!  Awesome!`;
 }  else {
-    visitsDisplay.textContent = `You last visited ${lastVisit} days ago.`;
+    visitsDisplay.textContent = `You last visited ${lastVisited} days ago.`;
   }
-
-lastVisit++;
-
-localStorage.setItem("lastVisit-ls", lastVisit);
+}
+localStorage.setItem("lastVisit-ls", today);

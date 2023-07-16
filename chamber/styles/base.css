@@ -50,8 +50,9 @@ img {
     position: relative;
 }
 
-.hero img{
-    width: 960px;
+.hero img {
+    width: 100%;
+    object-fit: cover;
     animation: none;
 }
 

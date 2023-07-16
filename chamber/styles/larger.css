@@ -41,4 +41,21 @@
 		flex: 1 1 100%;
 	}
 
+    .hero {
+        margin: 10px auto;
+        position: relative;
+    }
+    
+    .hero img {
+        width: 200%;
+        object-fit: cover;
+        animation: none;
+    }
+
+    .card2 {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+
 }
